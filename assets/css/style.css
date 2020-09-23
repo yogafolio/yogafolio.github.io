@@ -1,0 +1,16 @@
+.icon{
+	width:"200";
+	height:"250";
+	background:"#55595c";
+	color:"#eceeef";
+	}
+#cari_artikel{
+	width: auto;
+}
+#signup {
+	display: none;
+/*	position: absolute;*/
+	float: right;
+	/*margin-top: -3%;
+	margin-left: 60%;*/
+}
