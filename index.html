@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Portofolio Native Version | Yogafolio</title>
+    <link rel="shortcut icon" href="assets/image/resume-website.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="jumbotron">
+        <h1 id="judul">Website Portofolio Karya <span id="nama">'Mas Yoga'</span></h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#summary">Summary</a></li>
+                <li><a href="#pengalaman">Work Experience</a></li>
+                <li class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Portofolio</button>
+                    <div id="myDropdown" class="dropdown-content">
+                            <a href="#webp">Web Project</a>
+                            <a href="#andp">Android Project</a>
+                            <a href="#ardp">Arduino Project</a>
+                            <a href="#vidp">Video Editing Project</a>
+                            <a href="#phop">Photo Editing Project</a>
+                    </div>
+                </li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#contact-me">Contact Me</a></li>
+            </ul>
+        </nav>
+
+        
+    </header>
+    
+    <!-- container untuk gallery gambar-->
+    <div class="container" style="position: relative;">
+        <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+            <img src="assets/image/18-Delibroom.jpg" alt="Projek AccessiBe" style="width: 100%;">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+            <img src="assets/image/12-HyperSonix.jpg" alt="Projek HiperSonix" style="width: 100%;">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+            <img src="assets/image/13-KDAN-Mobile.jpg" alt="Projek KDAN Mobile" style="width: 100%;">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+            <img src="assets/image/14-Rested.jpg" alt="Projek Rested" style="width: 100%;">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+            <img src="assets/image/2-Chat.jpg" alt="Projek Chat" style="width: 100%;">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+            <img src="assets/image/9-Content.jpg" alt="Projek Content" style="width: 100%;">
+        </div>
+
+        <!--next dan previous button-->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <img class="demo cursor" src="assets/image/18-Delibroom.jpg" alt="Projek Delibroom" style="width: 100%;" onclick="currentSlide(1)">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="assets/image/12-HyperSonix.jpg" alt="Projek HiperSonix" style="width: 100%;" onclick="currentSlide(2)">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="assets/image/13-KDAN-Mobile.jpg" alt="Projek KDAN Mobile" style="width: 100%;" onclick="currentSlide(3)">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="assets/image/14-Rested.jpg" alt="Projek Rested" style="width: 100%;" onclick="currentSlide(4)">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="assets/image/2-Chat.jpg" alt="Projek Chat" style="width: 100%;" onclick="currentSlide(5)">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="assets/image/9-Content.jpg" alt="ProjekContent" style="width: 100%;" onclick="currentSlide(6)">
+            </div>
+        </div>
+
+    </div>
+    <!---->
+
+    <main>
+        <div id="content">
+            <article id="summary">
+                <h2>Summary</h2>
+                <p>Halo..!!! Perkenalkan saya Yoga bukan senam yoga :D</p>
+                <p>Saat ini usia saya menginjak 22 tahun, berasal dari lulusan tahun 2019 di STMIK Royal Kisaran</p>
+                <p>Mimpi saya adalah menjadi seorang Professional di bidang Full Stack Developer</p>
+                <p>Semoga saja impian saya bisa terwujud :)</p>   
+                <p>Buat anda yang sedang membaca tulisan ini, jika anda tertarik dengan pashion saya. Silahkan rekrut saya ke dalam pekerjaan anda atau team anda atau juga sebagai partner bisnis anda. thank you.</p> 
+            </article>
+            <article id="pengalaman">
+                <h2>Background</h2>
+                <p>Berikut data pengalaman kerja yang saya miliki :</p>
+                <p id="experiences">                     
+                </p>
+                
+            </article>
+            <article id="portofolio">
+                <h2>Portofolio</h2>
+                <p>Dari bertahun-tahun lamanya waktu, saya telah berhasil membuat berbagai macam projek seputar Teknologi, baik itu software maupun hardware.</p>
+                <section id="webp">
+                        <h3>Web Project</h3>
+                        <p>Dalam pembuatan projek ini menggunakan framework Bootstrap dan PHP native.</p>    
+                    </section>
+                    <section id="andp">
+                        <h3>Android Project</h3>
+                        <p>Dalam proses pembuatan aplikasi berbasis Android ini menggunakan aplikasi Android Studio dan juga menggunakan MIT APP Inventor Online.</p>    
+                    </section>
+                    <section id="ardp">
+                        <h3>Arduino Project</h3>
+                        <p>Dalam proses pembuatannya menggunakan papan Arduino Uno R3 serta menggunakan software resmi yaitu Arduino IDE.</p>
+                    </section>
+                    <section id="vidp">
+                        <h3>Video Editing Project</h3>
+                        <p>Dalam pembuatan projek video memerlukan beberapa media seperti gambar dan juga video, untuk aplikasi editor menggunakan KineMaster di Android.</p>
+                    </section>
+                    <section id="phop">
+                        <h3>Photo Editing Project</h3>
+                        <p>Biasanya dalam pengeditan gambar menggunakan aplikasi seperti Adobe Photoshop CS 6 ataupun Corel Draw.</p>
+                    </section>
+            </article>
+            <article id="about-me">
+                <h2>About Me</h2>
+                <p>Saya adalah orang yang memiliki minat sangat kuat di bidang teknologi, mulai dari pengetahuan seputar hardware maupun software saya paham akan hal tersebut.</p>    
+            </article>
+            <article id="contact-me">
+                <h2>Contact Me</h2>
+                <p>Anda bisa menghubungi email saya di siaganfox@gmail.com untuk mengajukan pertanyaan ataupun ingin mengajak untuk bekerja sama untuk suatu projek.</p>
+            </article>
+            <div id="scrollUP"><a href="#"><button>Kembali ke Atas</button></a></div>
+        </div>
+        <aside id="sidebar">
+            <section id="profil">
+                <div class="card">
+                <img id="avatar" src="assets/image/foto.jpg" alt="tri yoga dimas syahputra"/>          
+                <h1>Tri Yoga Dimas Syahputra</h1>
+                <p class="title">Full Stack Developer, Freelancer, Enterpreneur</p>
+                <p>STMIK Royal Kisaran</p>
+                <a href="https:/instagram.com/dimas.yoga" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="https://linkedin.com/in/triyogadimassyahputra" target="_blank"><i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/yogafolio" target="_blank"><i class="fa fa-github"></i></a>
+                <p><a href="mailto:siaganfox@gmail.com"><button>Contact</button></a></p>
+                <p><a href="https://drive.google.com/file/d/1TdhqtCIdTucR7EKxE-D6hICG-tf42Kgc/view?usp=sharing" target="_blank"><button>Download Resume</button></a></p>
+                </div>
+            </section>
+            <section id="hardskill">
+                <header><h3>My Hardskill</h3></header>
+                <ul>
+                    <li><em>HTML</em><div id="skillHTML"></div></li>
+                    <li><em>CSS</em><div id="skillCSS"></div></li>
+                    <li><em>JS</em><div id="skillJS"></div></li>
+                    <li><em>PHP</em><div id="skillPHP"></div></li>
+                    <li><em>SQL</em><div id="skillSQL"></div></li>
+                    <li><em>Python</em><div id="skillPy"></div></li>
+                </ul>
+            </section>
+            <section id="softskill">
+                <header><h3>My Softskill</h3></header>
+                <ul>
+                    <li><em>Interpersonal</em><div id="skillInter"></div></li>
+                    <li><em>Time Management</em><div id="skillTime"></div></li>
+                    <li><em>Public Speaking</em><div id="skillPublic"></div></li>
+                    <li><em>Creativity</em><div id="skillCrea"></div></li>
+                    <li><em>Problem Solving</em><div id="skillProb"></div></li>
+                    <li><em>Team Work</em><div id="skillTeam"></div></li>
+                </ul>
+            </section>
+        </aside>
+    </main>
+    <footer>
+        
+        <p id="copy">Copyright 1999 - 2020 &copy; Yogafolio</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

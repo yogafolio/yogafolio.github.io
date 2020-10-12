@@ -1,16 +1,578 @@
-.icon{
-	width:"200";
-	height:"250";
-	background:"#55595c";
-	color:"#eceeef";
-	}
-#cari_artikel{
-	width: auto;
+/* * {
+    border: 1px solid red;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Sansita+Swashed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chilanka&display=swap');
+
+@media only screen and (max-width: 600px) {
+    * {
+        color: red;
+        
+    }
+    nav ul li{
+        display: flex;
+        flex-direction: column;
+    }
 }
-#signup {
-	display: none;
-/*	position: absolute;*/
-	float: right;
-	/*margin-top: -3%;
-	margin-left: 60%;*/
+
+@media only screen and (min-width: 600px) {
+    * {
+        color: yellow;
+        
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    * {
+        color: green;
+        
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    * {
+        color: blue;
+        
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    * {
+        color: whitesmoke;
+        
+    }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 1px solid pink; */
+
+}
+
+body {
+    font-family: 'Chilanka', cursive;
+    background-image: url("../image/design-an-attractive-background-for-your-website.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+header{
+    
+    /*properti pendukungnya*/
+    max-width: 900px;
+    margin: 0 auto;
+
+}
+
+.dropbtn {
+    background-color: inherit;
+    color: inherit;
+    padding: 5px;
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Sansita Swashed', cursive;
+
+}
+
+nav ul li:hover, .dropbtn:hover, .dropbtn:focus {
+    background-color: rgba(192, 152, 152, 0.1);
+    color: white;
+}
+
+.dropdown {
+    position: relative;
+    display:inline-block;
+}
+
+.dropdown-content {
+    background-color: rgb(40, 23, 119);
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: rgba(192, 152, 152, 0.1);
+
+}
+
+.dropdown a:hover {
+    background-color: rgba(192, 152, 152, 0.2);
+}
+
+.show {
+    display: block;
+}
+
+.mySlides {
+    width: 100%;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.container {
+    position: relative;
+}
+
+.mySlides {
+    display: none;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+    color: #007bb5;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 16.66%;
+}
+
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+
+
+main {
+  
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(13, 25, 40, 0.9);
+ 
+    /*properti pendukungnya*/
+    max-width: 900px;
+    margin: 0 auto;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 100%;
+    margin: 5px;
+
+    /*properti pendukungnya*/
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#content {
+    flex: 75%;
+    margin: 5px;
+}
+
+p#experiences, article {
+    line-height: 20px;
+}
+
+h2 {
+    padding-bottom: 5px;
+}
+
+aside {
+
+    color: silver;
+}
+
+footer {
+    background-color: rgba(13, 25, 40, 0.9);
+
+    /*properti pendukungnya*/
+    max-width: 900px;
+    margin: 0 auto;
+
+
+
+}
+
+#copy {
+    padding: 15px;
+}
+
+.jumbotron {
+    padding: 50px;
+    background-color: rgba(13, 25, 40, 0.9);
+    font-size: 22px;
+    text-align: center;
+    color: whitesmoke;
+    font-family: 'Sansita Swashed', cursive;
+
+}
+
+.mySlides img{
+    max-height: 300px;
+}
+
+img.demo.cursor {
+    height: 100px;
+}
+
+h2:hover {
+    color: rgb(221, 60, 32) ;
+}
+
+h1:hover {
+    color: steelblue;
+}
+
+h1 #nama {
+    color: royalblue;
+}
+
+h1 #nama:hover {
+    color: rgb(41, 82, 204);
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 15px;
+    padding: 5px;
+
+}
+
+nav ul li a:hover {
+    color: whitesmoke;
+
+}
+
+nav li a:link {
+    color: inherit;
+
+}
+
+
+#sidebar {
+    flex: 25%;
+    margin: 5px;
+}
+
+#sidebar h3 {
+    color: tomato;
+
+}
+
+#sidebar ul {
+    color: silver;
+
+}
+
+#sidebar ul li {
+    list-style-type: none;
+
+}
+
+.kontak {
+    margin-left: 5px;
+}
+
+
+article {
+    /* border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(230, 6, 6, 0.2); */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 12px;
+    margin: 5px;
+    color: silver;
+}
+
+h2 {
+    color: tomato;
+}
+
+h3 {
+    color: rgb(202, 101, 84);
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+.title {
+    color: grey;
+    font-size: 18px;
+}
+
+button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.card a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+
+.card button:hover, .card a:hover {
+    opacity: 0.7;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-github {
+    background: dimgray;
+    color: white;
+}
+
+article:hover {
+    background-color: rgba(192, 152, 152, 0.2);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(230, 6, 6, 0.2);
+
+}
+
+#profil:hover, #softskill:hover, #hardskill:hover {
+    background-color: rgba(192, 152, 152, 0.2);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(230, 6, 6, 0.2);
+
+}
+
+#nama {
+    color: aliceblue;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+i.fa {
+    font-size: 20px;
+}
+
+#summary {
+    border-radius: 5px;
+    padding: 12px;
+    margin: 3px;
+}
+
+#scrollUP {
+    width: 170px;
+    margin: 0 auto;
+    margin-top: 5px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+#scrollUP a {
+    text-decoration: none;
+
+}
+
+#scrollUP a:visited {
+    color: black;
+
+}
+
+#scrollUP:hover {
+    background-color: rgba(192, 152, 152, 0.2);
+
+}
+
+#scrollUP button {
+    border-radius: 5px;
+
+}
+
+section {
+    margin-bottom: 10px;
+}
+
+#profil, #softskill, #hardskill {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 5px;
+    padding: 5px;
+}
+
+#profil button {
+    margin-bottom: 5px;
+}
+
+img#avatar {
+    border-radius: 50%;
+    width: 70%;
+    height: 150px;
+    
+}
+
+#skillHTML {
+    background-color: royalblue;
+    width: 90%;
+    height: 3px;
+}
+
+#skillCSS {
+    background-color: royalblue;
+    width: 85%;
+    height: 3px;
+}
+
+#skillJS {
+    background-color: royalblue;
+    width: 80%;
+    height: 3px;
+}
+
+#skillPHP {
+    background-color: royalblue;
+    width: 85%;
+    height: 3px;
+}
+
+#skillSQL {
+    background-color: royalblue;
+    width: 65%;
+    height: 3px;
+}
+
+#skillPy {
+    background-color: royalblue;
+    width: 50%;
+    height: 3px;
+}
+/*batas*/
+#skillInter {
+    background-color: royalblue;
+    width: 90%;
+    height: 3px;
+}
+
+#skillTime {
+    background-color: royalblue;
+    width: 60%;
+    height: 3px;
+}
+
+#skillPublic {
+    background-color: royalblue;
+    width: 70%;
+    height: 3px;
+}
+
+#skillCrea {
+    background-color: royalblue;
+    width: 75%;
+    height: 3px;
+}
+
+#skillProb {
+    background-color: royalblue;
+    width: 75%;
+    height: 3px;
+}
+
+#skillTeam {
+    background-color: royalblue;
+    width: 80%;
+    height: 3px;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+
+}
+
+footer {
+    background-color: rgba(13, 25, 40, 0.9);
 }
