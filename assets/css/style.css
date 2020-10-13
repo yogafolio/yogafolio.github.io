@@ -1,24 +1,58 @@
-/* * {
-    border: 1px solid red;
-} */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Sansita+Swashed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Chilanka&display=swap');
 
+
 @media only screen and (max-width: 600px) {
     * {
-        color: red;
+        color: rgb(255, 6, 6);
         
     }
     nav ul li{
         display: flex;
         flex-direction: column;
     }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(13, 25, 40, 0.9);
+    
+        /*properti pendukungnya*/
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    #scrollUP {
+        visibility: hidden;
+    }
+    #scrollUPdown {
+        visibility: visible;
+    }
+  
 }
 
 @media only screen and (min-width: 600px) {
     * {
         color: yellow;
         
+    }
+    nav ul li{
+        display: inline-block;
+        
+    }
+    main {
+        display: flex;
+        flex-direction: row;
+        background-color: rgba(13, 25, 40, 0.9);
+    
+        /*properti pendukungnya*/
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    #scrollUP {
+        visibility: visible;
+    }
+    #scrollUPdown {
+        visibility: hidden;
     }
 }
 
@@ -28,6 +62,22 @@
         color: green;
         
     }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        background-color: rgba(13, 25, 40, 0.9);
+    
+        /*properti pendukungnya*/
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    #scrollUP {
+        visibility: visible;
+    }
+    #scrollUPdown {
+        visibility: hidden;
+    }
 }
 
 @media only screen and (min-width: 992px) {
@@ -35,21 +85,53 @@
         color: blue;
         
     }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        background-color: rgba(13, 25, 40, 0.9);
+    
+        /*properti pendukungnya*/
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    #scrollUP {
+        visibility: visible;
+    }
+    #scrollUPdown {
+        visibility: hidden;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
     * {
         color: whitesmoke;
-        
     }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        background-color: rgba(13, 25, 40, 0.9);
+    
+        /*properti pendukungnya*/
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    #scrollUP {
+        visibility: visible;
+    }
+    #scrollUPdown {
+        visibility: hidden;
+    }
+    
 }
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* border: 1px solid pink; */
-
+    font-weight: bold;        
+    /* border: 5px solid green; */
 }
 
 body {
@@ -117,6 +199,10 @@ nav ul li:hover, .dropbtn:hover, .dropbtn:focus {
 
 .mySlides {
     width: 100%;
+}
+
+.mySlides img {
+    height: 200px;
 }
 
 img {
@@ -198,23 +284,9 @@ img {
 }
 
 
-
-main {
-  
-    display: flex;
-    flex-direction: row;
-    background-color: rgba(13, 25, 40, 0.9);
- 
-    /*properti pendukungnya*/
-    max-width: 900px;
-    margin: 0 auto;
-
-}
-
 .container {
     display: flex;
     flex-direction: column;
-    flex-grow: 100%;
     margin: 5px;
 
     /*properti pendukungnya*/
@@ -277,12 +349,20 @@ h2:hover {
     color: rgb(221, 60, 32) ;
 }
 
+#judul {
+    color: whitesmoke;
+}
+
+#judul:hover {
+    color: steelblue;
+}
+
 h1:hover {
     color: steelblue;
 }
 
 h1 #nama {
-    color: royalblue;
+    color: steelblue;
 }
 
 h1 #nama:hover {
@@ -295,11 +375,11 @@ nav a {
 
 nav li {
     list-style-type: none;
-    display: inline-block;
     margin-right: 15px;
     padding: 5px;
 
 }
+
 
 nav ul li a:hover {
     color: whitesmoke;
@@ -474,6 +554,7 @@ i.fa {
     border-radius: 5px;
 
 }
+
 
 section {
     margin-bottom: 10px;
